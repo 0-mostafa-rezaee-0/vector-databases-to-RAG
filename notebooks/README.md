@@ -1,10 +1,14 @@
-# Notebooks Folder
+<h1 align="center">Notebooks</h1>
 
-This folder contains Jupyter notebooks for interactive data analysis and experimentation in the Docker Data Science project.
+# 1. Purpose
 
-## Contents
+Interactive exploration of embeddings, vector databases, and RAG.
 
-- `exploratory_analysis.ipynb`: A sample notebook demonstrating exploratory data analysis techniques. This notebook shows how to load data, create visualizations, and perform initial statistical analysis within the Docker environment.
+# 2. Contents
+
+- `01_embeddings_basics.ipynb`
+- `02_vector_db_comparison.ipynb`
+- `03_rag_pipeline.ipynb`
 
 ## Usage
 
