@@ -1,43 +1,23 @@
-# Scripts Folder
+<h1 align="center">Scripts</h1>
 
-This folder contains Python scripts for the Docker Data Science project.
+# 1. Purpose
 
-## Contents
+Runnable examples for embeddings, similarity search, vector stores, and a minimal RAG loop.
 
-- `data_prep.py`: A sample Python script for data preparation and preprocessing. This script demonstrates how to process data within the Docker environment using common data science libraries.
+# 2. Contents
 
-## Usage
+- `embed_text.py`: encode a tiny corpus using Sentence Transformers
+- `build_index_chroma.py`: index and query with Chroma (persistent at `data/chroma_store`)
+- `query_similarity.py`: cosine similarity over in-memory vectors
+- `rag_example.py`: retrieve from Chroma and feed a stubbed generator
 
-Scripts in this folder can be executed:
+# 3. Usage
 
-1. From the command line within the Docker container:
-   ```bash
-   python data_prep.py
-   ```
+Run inside the container:
 
-2. From VS Code when connected to the container
-3. As imported modules in other scripts or notebooks
-
-## Purpose
-
-The scripts folder serves several important functions:
-
-- Contains reusable code modules for data science tasks
-- Houses production-ready implementations of analyses
-- Provides utilities for data processing, model training, and evaluation
-- Stores command-line tools for automation within the Docker environment
-
-## Best Practices
-
-- Include docstrings and comments to document functionality
-- Implement proper error handling
-- Use logging instead of print statements
-- Structure scripts to be importable as modules when appropriate
-- Consider using a structure like:
-  ```python
-  def main():
-      # Main script functionality
-      
-  if __name__ == "__main__":
-      main()
-  ``` 
+```bash
+python scripts/embed_text.py
+python scripts/build_index_chroma.py
+python scripts/query_similarity.py
+python scripts/rag_example.py
+```
